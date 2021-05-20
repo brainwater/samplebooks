@@ -49,8 +49,8 @@ Return to the index page at ```localhost:8000``` in your browser. You will now s
 ## Further work
 
 - Error handling
- - If the google api requests fail, there isn't a graceful fallback or helpful error message for the user
- - When the title, author, or other information is missing, the application doesn't have an informative error message for the user nor a fallback strategy
+  - If the google api requests fail, there isn't a graceful fallback or helpful error message for the user
+  - When the title, author, or other information is missing, the application doesn't have an informative error message for the user nor a fallback strategy
 - The image shown is sometimes a 'default' image provided by google
 - No header is yet included for site navigation back to the home page
 - There is no way to delete existing reviews
