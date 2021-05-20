@@ -24,11 +24,11 @@ Activate the virtualenv:
 Install the pip dependencies:
 ```$ pip install -r requirements.txt```
 
-Migrate the database:
-```$ python manage.py migrate```
-
 Set the environment variable with the Google API Key:
 ```$ export GOOGLEAPI_KEY='AIz...7b8'```
+
+Migrate the database:
+```$ python manage.py migrate```
 
 Run the server:
 ```$ python manage.py runserver```
@@ -57,6 +57,8 @@ Return to the index page at ```localhost:8000``` in your browser. You will now s
 - There is no user authentication nor management yet
 - UI attractiveness and organization is essentially nonexistant
 - Django secret key isn't kept within the environment variables (this matters for things like CSRF prevention)
+- Pagination to show more than one query of book results
+- Pagination of user reviews to prevent arbitrary size list
 
 
 

@@ -39,8 +39,8 @@ def google_book_details(book_id):
     # TODO: determine if google could ever fail to provide any of the image links
     # Default to the Large image, but provide any image in the image links list.
     imageLink = list(volume_info['imageLinks'].values())[0]
-    if 'large' in volume_info['imageLinks']:
-        imageLink = volume_info['imageLinks']['large']
+    if 'thumbnail' in volume_info['imageLinks']:
+        imageLink = volume_info['imageLinks']['thumbnail']
     parameters = {
         'imageLink': imageLink,
         'title': volume_info['title'],
