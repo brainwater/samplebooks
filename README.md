@@ -59,6 +59,7 @@ Return to the index page at ```localhost:8000``` in your browser. You will now s
 - Django secret key isn't kept within the environment variables (this matters for things like CSRF prevention)
 - Pagination to show more than one query of book results
 - Pagination of user reviews to prevent arbitrary size list
+- The application currently queries the Google API every time we need any information about a book, we only store the ID and the reviews of books.
 
 
 
