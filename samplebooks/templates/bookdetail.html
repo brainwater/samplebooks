@@ -1,0 +1,21 @@
+<ul>
+  <li> Title: {{ title }} </li>
+  <li> Author: {{ author }} </li>
+  <li> Published Date: {{ publishedDate }} </li>
+  <li> Image: <img src="{{ imageLink }}" alt="{{ title }}"/> </li>
+  <li> Description: {{ description|safe }} </li>
+</ul>
+<br/>
+<form method="post">
+  {% csrf_token %}
+  {{ reviewForm }}
+  <input type="submit" value="Submit">
+</form>
+<br/>
+Reviews:
+<br/>
+<ul>
+  {% for review in reviews %}
+    <li> {{ review.content }} </li>
+  {% endfor %}
+</ul>

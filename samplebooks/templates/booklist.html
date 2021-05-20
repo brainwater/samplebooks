@@ -1,0 +1,5 @@
+<ul>
+  {% for book in booklist %}
+    <li>Author: {{ book.volumeInfo.authors.0 }} <a href="{% url 'book_detail' book.id %}" >Title: {{ book.volumeInfo.title }}</a></li>
+  {% endfor %}
+</ul>

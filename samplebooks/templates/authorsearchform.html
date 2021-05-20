@@ -1,0 +1,11 @@
+<form action="/" method="post">
+  {% csrf_token %}
+  {{ authorForm }}
+  <input type="submit" value="Submit">
+</form>
+<br/>
+<ul>
+  {% for review in reviews %}
+    <li> Book: <a href="{% url 'book_detail' review.book_id %}"> {{ review.book_title }} </a> {{ review.content }} </li>
+  {% endfor %}
+</ul>
